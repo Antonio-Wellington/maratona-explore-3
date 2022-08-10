@@ -1,0 +1,88 @@
+ /* Comentários em CSS*/
+ /* "id" elemento único se escreve "# "e o nome do elemento*/
+ /* "class" se escreve "." e o nome do elemento*/
+ /* o seletor "*" é universal ou seja ele serve para todos*/
+ /* div tem quebra de linha, span deixa tudo do lado*/
+ /*" display inline" não pode ser definido largura ou altura, "display block" quebra as plavras  dentro do span,
+ vai ocupar toda largura e jogar o resto para  baixo*/
+
+ /*GLOBAL*/
+ *{
+  margin: 0; /* espaço entre as palavras*/
+  padding: 0; /* prenchimento da tela */
+}
+body{
+  background-color: #FFEDD5; /* Cor de fundo*/
+  font-family: 'Roboto', sans-serif;
+}
+ul{
+  list-style: none; /* tipo de enumeração de lista */
+}
+
+/* FONTS*/
+h1, h2, h3, .price {
+  font-family: 'Roboto Serif',serif;
+  text-transform: uppercase; /* tudo maiúsculo*/
+  color: #2D2C2A;
+   }
+
+/*HEADER*/
+header { 
+  padding: 32px 0;
+  margin: 0 auto; /* 0 em cima e baixo da caixa, auto nas laterais*/
+  text-align: center; /* alinhamento de texto*/
+} 
+header, /* quando coloca o elemento de cima com virgula ele pega os atributos do elemento de baixo */
+
+/*SECTION*/
+section{
+  max-width: 300px; /* largura máxima da caixa*/
+  margin: 0 auto;
+
+}
+
+header h1 {
+  margin-bottom: 4px;
+  font-size: 28px;
+  line-height: 33px;
+}
+header h1 span {
+  color:#995000 ;
+
+}
+
+header p {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+section{
+  margin-bottom: 24px;
+}
+section h2 {
+  background-color: #FED7AA;
+  padding: 8px 16px;
+  text-align: center;
+  margin-bottom: 24px; /* espaço abaixo da caixa */
+  font-size: 18px;
+}
+/*LISTAS*/
+ul li { /* alinhando caixa dentro de outra caixa, ou seja lado a lado*/
+  margin-bottom: 16px; 
+  display: flex; /* faz com que um elemento fique lado a lado*/
+} 
+
+li .details{
+  max-width: 240px;
+}
+.details h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.details p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 21px; /* altura da linha*/
+}
